@@ -1,0 +1,802 @@
+/* COLOR
+
+Color Theme Swatches in Hex 
+color: #042440;  - dark blue
+color: #BADCE0;  - light blue
+color: #D9430D;  - dark coral
+color: #FE765E;  - light coral
+color: #FFFFFF;  - white
+
+Color Theme Swatches in RGBA 
+color: rgba(4, 36, 64, 1);  - dark blue
+color: rgba(186, 220, 224, 1);  - light blue
+color: rgba(217, 67, 13, 1);  - dark coral
+color: rgba(254, 118, 94, 1);  - light coral
+color: rgba(255, 255, 255, 1);  - white
+*/
+
+/* FONTS
+
+font-family: "DM Sans", "Helvetica", sans-serif;
+font-family: "Lato", "Helvetica", sans-serif;
+font-family: "Lora", "Georgia", serif;
+*/
+
+/* ------------------------------------------------------------ GENERAL STYLES ----------------------------------------------------------------- */
+
+html {
+  background-color: #e1e1e1;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Lato", "Helvetica", sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+  color:#042440;
+}
+
+ul {
+	list-style: none;
+}
+
+h1, h2, h3, h4, a {
+  font-family: "DM Sans", "Helvetica", sans-serif;
+  text-transform: uppercase; 
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------ HEADER ----------------------------------------------------------------- */
+
+.home_header {
+  background-image: url("../images/cover_home_op.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  position: relative;
+  height: 100vh; 
+}
+
+.logo {
+  position: absolute;
+  z-index: 100;
+}
+
+.logo:hover {
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+
+.logo:active {
+  opacity: 0.5;
+}
+
+.home_heding {
+  text-align: center;
+  padding: 16rem 0;
+  line-height: 3rem;
+  text-shadow: 4px 4px 10px #042440;
+  letter-spacing: 1px; 
+}
+
+.home_h1 {
+  color: #FFFFFF;
+  font-size: 4.2rem;
+  margin: 30px 0 10px 0;
+}
+
+.home_h2 {
+  color: #FFFFFF;
+  font-size: 1.9rem;
+  padding: 0;
+  margin: 0;
+}
+
+.home_header-p {
+  font-family: "Lora", "Georgia", serif;
+  color: #FFFFFF;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.home_header-link {
+  color: #FFFFFF;
+  border: solid 4px #D9430D;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.2rem;
+  margin: 20px;
+  text-shadow: none;
+  background-color: rgba(4, 36, 64, 0.2);
+}
+
+.home_header-link:hover {
+  background-color: rgba(4, 36, 64, 0.6);
+}
+
+.home_header-link:active {
+  opacity: 0.5;
+}
+
+#active {
+  text-decoration: underline;
+}
+
+/* ----------------------------------- NAVIGATION --------------------------------------------- */
+
+.hamburger-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url("../images/ham-btn-open.svg");
+  background-size: 100%;
+  background-color: transparent;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hamburger-btn:hover {
+  opacity: 0.7;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  padding: 15px; 
+  margin: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+.navList:hover {
+  text-decoration: underline;
+}
+
+.navList:active {
+  opacity: 0.7;
+}
+  
+.home_nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+  background-color: #042440;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+  box-shadow: 0px 8px 16px 0px rgba(4, 36, 64,0.4);
+}
+
+.navShow {
+  transform: translateY(0);
+} 
+
+.navClose {
+  background-image: url("../images/ham-btn-closed.svg");
+}
+
+/* ----------------------------------- NEWS --------------------------------------------- */
+
+.main-cover {
+  text-align: center;
+  background-image: url("/images/background_cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  min-height: 200px;
+}
+
+.main-cover h1 {
+  color: #FFFFFF;
+  margin: 0;
+  padding-top: 120px; 
+}
+
+.news_container {
+  margin: 1rem;
+  text-align: center;
+}
+
+.news_container h2 {
+  color: #D9430D;
+}
+
+.news_container h3 {
+  color: #042440;
+  font-size: 1.8rem;
+  margin: 0.8rem 0;
+}
+
+.resultsLastArticle {
+  padding: 2rem 1rem 3rem 1rem;
+  border-bottom: #D9430D solid 2px;
+}
+
+.last_news-image {
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  min-height: 250px;
+}
+
+.resultsLastArticle:hover {
+  text-decoration: underline;
+}
+
+.resultsLastArticle:active {
+  opacity: 0.7;
+}
+
+.last_news-credits a, .last_news-credits, .image-credits, .image-credits a {
+  color: #042440;
+  font-family: "Lora", "Georgia", serif;
+  font-style: italic;
+  font-size: 0.6rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.last_news-credits a, .image-credits a {
+  text-decoration: underline;
+}
+
+.last_news-published{
+  font-size: 0.8rem;
+}
+
+.articleContainer {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #042440; 
+  box-shadow: 0px 8px 16px 0px rgba(4, 36, 64,0.4);
+}
+
+.articleContainer:hover{
+  opacity: 0.7;
+  border: solid 3px #D9430D;
+  cursor: pointer;
+}
+
+/* -----------------------------------ALL NEWS --------------------------------------------- */
+
+.breadcrumb-nav {
+  padding: 1.2rem;
+}
+
+.breadcrumb-nav a {
+  color: #042440;
+  margin-right: 0.5rem;
+}
+
+.breadcrumb-nav-news{
+  text-decoration: underline;
+}
+
+.breadcrumb-nav-all {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+  opacity: 0.7;
+}
+
+.articleAllContainer {
+  padding: 0 1rem;
+  margin: 1rem;
+  box-shadow: 0px 8px 16px 0px rgba(4, 36, 64,0.4);
+}
+
+.newsAll_results h3{
+  color: #042440;
+  border-bottom: 2px solid #D9430D;
+  padding: 1rem;
+  text-align: left;
+  margin: 1rem auto; 
+}
+
+.articleAllContainer:hover {
+  background-color: #BADCE0;
+}
+
+.newsAll_results h3:active, .newsAll_results h3:visited {
+  opacity: 0.7;
+}
+
+.news_results, .newsAll_results, .images_container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0.5rem;
+}
+
+.news_results h3, .newsAll_results h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.8rem;
+}
+.news_results h3 {
+  color: #FFFFFF;
+}
+
+.nextButton {
+  background-color: #D9430D;
+  max-width: 80px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 8px 16px 0px rgba(4, 36, 64,0.4);
+  cursor: pointer;
+}
+
+.nextButton:hover {
+  opacity: 0.7;
+}
+
+.moreNews {
+  font-family: "Lora", "Georgia", serif;
+  font-style: italic;
+  text-transform: capitalize;
+  color: #D9430D;
+  text-decoration: underline;
+}
+
+.moreNews:hover {
+  opacity: 0.7;
+}
+
+.moreNews:active {
+  opacity: 1;
+}
+
+/* ----------------------ARTICLE DEATILS --------------------------- */
+
+.article-details {
+  padding: 2rem;
+}
+
+.article-abstract {
+  border-bottom: #D9430D solid 2px;
+  padding-bottom: 2rem;
+}
+
+.last_news-url {
+ font-weight: 600;
+}
+
+.last_news-url a{
+  text-transform: lowercase;
+  text-decoration: underline;
+  color: #042440;
+  font-size: 0.8rem;
+}
+
+.last_news-url a:hover{
+  opacity: 0.7;
+}
+
+/* ----------------------------------- IMAGES --------------------------------------------- */
+
+.imageContainer {
+  padding: 1rem;
+}
+
+.images_file {
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  min-height: 250px;
+  padding: 0 1rem;
+  margin: 1rem;
+  box-shadow: 0px 8px 16px 0px rgba(4, 36, 64,0.2);
+}
+
+.image-credits {
+  display: none;
+}
+
+.image-h3 {
+  font-size: 1.5rem;
+}
+
+.img_description{
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(186, 220, 224, 0.7);
+  color: #FFFFFF;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.image-details {
+  padding: 2rem;
+}
+
+/* ----------------------------------- CONTACT--------------------------------------------- */
+
+.contact_main , .main-cover-contact{
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+
+form {
+  padding: 2rem;
+  margin-right: 2rem;
+  border-radius: 1rem;
+  max-width: 250px;
+  margin: auto;
+}
+
+form label {
+  font-weight: 600;
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Lato", "Helvetica", sans-serif;
+}
+
+textarea {
+  font-family: "Lato", "Helvetica", sans-serif;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  min-height: 130px;
+}
+
+.contactSendButton {
+  width: 200px;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  color: #FFFFFF;
+  border: solid 3px #D9430D;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.2rem;
+  background-color: rgba(4, 36, 64, 0.8);
+}
+
+button:hover {
+  background-color: #BADCE0;
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+.form-error {
+  display: none;
+  color: #D9430D;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.message {
+  background: #04bf8a;
+  padding: 1rem;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-cover-contact p {
+  color: #FFFFFF;
+  font-family: "Lora", "Georgia", serif;
+  font-style: italic;
+  padding: 0 1rem;
+}
+
+.subscribe {
+  background-color: #BADCE0;
+  text-align: center;
+  padding: 2rem;
+}
+
+.subscribe form {
+  padding-top: 0;
+}
+
+.subscribe p {
+  color: #FFFFFF;
+  font-family: "Lora", "Georgia", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+
+
+/* ----------------------------------- FOOTER --------------------------------------------- */
+
+footer {
+  text-align: center;
+  display: block;
+  padding-top: 1rem;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer_container-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  color: #042440;
+  text-transform: uppercase;
+  padding: 1rem;
+  line-height: 1.8rem;
+}
+
+.footer_container-col a {
+  color: #042440;
+}
+
+footer h4 {
+  margin: 0;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer a:active {
+  opacity: 0.7;
+}
+
+.footer_to-top:hover {
+  opacity: 0.5;
+}
+
+.footer_to-top:active {
+  opacity: 1;
+}
+
+.footer_social-icon {
+  width: 40px;
+  padding: 0.7rem;
+}
+
+.footer_social-icon:hover {
+  opacity: 0.7;
+}
+
+.footer_copy {
+  background-color: #042440;
+  color: #FFFFFF;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer_copy a {
+  color: #FFFFFF;
+}
+
+
+/* --------------------------------------------- MEDIA ------------------------------------------------------- */
+
+@media all and (min-width: 992px) {
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  /* ----------------------------------- MEDIA HEADER --------------------------------------------- */
+
+  .home_nav {
+    display: flex;
+    align-items: center;
+    height: 100px; 
+    transform: none; 
+    transition: none;
+    position: static;
+  }
+
+  .home_nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .navList {
+    padding: 30px 0; 
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+
+  .home_h1 {
+    font-size: 6rem;
+    padding-bottom: 15px;
+  }
+
+  .home_h2 {
+    font-size: 2.7rem;
+  }
+
+  .home_header-p {
+    font-size: 1.5rem;
+  }
+
+  /* ----------------------------------- MEDIA NEWS --------------------------------------------- */
+
+  .main-cover h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-top: 20px;
+
+  }
+
+  .main-cover {
+    min-height: 100px;
+  }
+
+  .resultsLastArticle h3, .article-details h2{
+    font-size: 2rem;
+  }
+
+  .last_news-image {
+    min-height: 450px;
+  }
+
+  .last_news-credits a, .last_news-credits , .image-credits, .image-credits a {
+    font-size: 0.8rem;
+  }
+
+  
+  .news_container h2 {
+    text-align: start;
+
+  }
+  
+  .newsAll_results {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .articleAllContainer {
+    min-height: 200px;
+    max-width: 200px;
+  }
+
+  .news_results, .newsAll_results {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* ----------------------------------- MEDIA IMAGES --------------------------------------------- */
+
+  .images_file {
+    min-height: 400px;
+    min-width: 400px;
+    margin: auto;
+
+  }
+
+  .images_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .image-credits, .image-credits a {
+    max-width: 400px;
+    display: inline-block;
+  }
+
+  .img_wrap {
+    position: relative;
+    min-height: 250px;
+    min-width: 250px;
+  }
+  
+  .image-h3 {
+    display: none;
+  }
+  
+  
+  .img_wrap:hover .img_description {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* ----------------------------------- MEDIA CONTACT --------------------------------------------- */
+
+  #contact-form {
+    max-width: 450px;
+  }
+
+  /* ----------------------------------- MEDIA FOOTER --------------------------------------------- */
+
+
+  .footer_nav{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer_container {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem 2rem 2rem;
+    align-items: center;
+  }
+
+  .footer_container-col {
+    text-align: left;
+    line-height: 2.2rem;
+    margin-right: 2rem;
+  }
+
+  .footer_copy a {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  footer h4 {
+    font-size: 1.5rem;
+  }
+ 
+}
+
+/*----------loader-------------*/
+
+.loader {
+  animation: spin 5s linear infinite;
+  margin: 40%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
